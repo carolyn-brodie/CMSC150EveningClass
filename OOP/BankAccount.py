@@ -35,11 +35,18 @@ class BankAccount:
 
 
     ##Nice to have method to print things out
-    def __str__(self):
+    # def __str__(self):
+    #     out = str(self.owner) + " has account " + str(self.account_number)
+    #     out = out + " that contains a balance of " + str(self.balance)
+    #
+    #     return out
+
+    def __repr__(self):
         out = str(self.owner) + " has account " + str(self.account_number)
         out = out + " that contains a balance of " + str(self.balance)
 
         return out
+
 
 
 def tester():
